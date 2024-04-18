@@ -65,12 +65,12 @@ class DBStorage:
             self.__session.delete(obj)
 
     def get(self, cls, id):
-         """retrieves an object of a class with id"""
-         return self.all(cls)[id]
+        """retrieves an object of a class with id"""
+        return self.all(cls)[id]
 
     def count(self, cls=None):
-         """retrieves the number of objects of a class or all (if cls==None)"""
-         return len(self.all(cls))
+        """retrieves the number of objects of a class or all (if cls==None)"""
+        return len(self.all(cls))
 
     def reload(self):
         """reloads data from the database"""
